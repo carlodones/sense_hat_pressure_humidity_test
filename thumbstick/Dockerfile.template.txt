@@ -1,4 +1,4 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-python:3.7.0
+FROM resin/%%RESIN_MACHINE_NAME%%-python:2.7-slim
 
 WORKDIR /usr/src/app
 
