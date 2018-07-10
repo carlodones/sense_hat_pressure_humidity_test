@@ -13,8 +13,9 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 # installazione delle seguenti librerie
 # -apt install libopenjp2-7 sense-hat
 # -pip install sense-hat rtimulib
-# -pip install scipy matplotlib ipython jupyter pandas sympy nose
+# -pip install numpy scipy matplotlib ipython jupyter pandas sympy nose
 # -apt install python-pip
+# -apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
 COPY ./app ./
 
