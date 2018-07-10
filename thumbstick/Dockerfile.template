@@ -1,4 +1,4 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-python:3.7.0
+FROM resin/%%RESIN_MACHINE_NAME%%-python:latest
 
 WORKDIR /usr/src/app
 
@@ -6,7 +6,7 @@ COPY ./app/requirements.txt ./
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \
   python sense-hat raspberrypi-bootloader && \
-  pip install sense-hat rtimulib && \ 
+  pip install sense-hat rtimulib && \
   apt install python-pip libopenjp2-7 sense-hat && \
   apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 # -apt install libopenjp2-7 sense-hat
 # -pip install sense-hat rtimulib
 # -apt install python-pip
- 
+
 COPY ./app ./
 
 ## Uncomment if you want systemd
