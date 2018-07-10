@@ -1,2 +1,6 @@
-Sense hat humidity test
-sense_hat_pressure_humidity_test/main/app/
+Test sul Sense Hat per configurazione dei sensori e aggiornamento Python alla versione 3.7.0.
+Problematiche legate alla libreria RTMIU idealmente risolvibili con:
+- aggiornamento dockerfuile.template installando per ogni docker la versione aggiornata di python e installando le seguenti librerie:
+    -apt install libopenjp2-7 sense-hat
+    -pip install sense-hat rtimulib
+    -apt install python-pip
